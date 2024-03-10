@@ -1,9 +1,11 @@
-# 👋 Hello there! I'm Felipe!
+## 👋 Hello there! I'm Felipe!
+# 🌡️ Welcome to Temperature Conversor - MK 1.0
+### That's a simple program to convert any type and value of temperature.
 
- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=myusername&hide=javascript,css,scss,html&theme=tokyonight)
-Convert any temperature value!
+## ⚠️ How to use?
+> [!CAUTION]
+> See the topics above to run the code correctly!
 
-## How to use?
 -1 - First, clone the repo, using: `git clone https://github.com/fleipekkj13/TemperatureInTerminal.git`<br />
 -2 - Go to the file path: `cd TemperatureInTerminal`<br />
 -3 - Install the app into your system: `sudo bash ./compile.bash`
