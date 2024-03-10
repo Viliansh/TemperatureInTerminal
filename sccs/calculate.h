@@ -28,12 +28,12 @@ extern int calculate(int value, int mType, int cType) {
                 case 2:
                     sum = (value * 9/5) + 32;
                     leadBoard();
-                    printf(GREEN_TEXT "\n\nResult is: " YELLOW_TEXT"%d F°" RESET_TEXT, sum);
+                    printf(GREEN_TEXT "\n\nResult is: " YELLOW_TEXT"%d F°\n" RESET_TEXT, sum);
                     break;
                 case 3:
                     sum = value + 273;
                     leadBoard();
-                    printf(GREEN_TEXT "\nResult is: " YELLOW_TEXT"%d K°" RESET_TEXT, sum);
+                    printf(GREEN_TEXT "\nResult is: " YELLOW_TEXT"%d K°\n" RESET_TEXT, sum);
                     break;
             }
             break;
@@ -42,12 +42,12 @@ extern int calculate(int value, int mType, int cType) {
                 case 1:
                     sum = (value - 32) * 5/9;
                     leadBoard();
-                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d C°" RESET_TEXT,sum);
+                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d C°\n" RESET_TEXT,sum);
                     break;
                 case 3:
                     leadBoard();
                     sum = (value - 32) * 5/9 + 273;
-                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d K°" RESET_TEXT,sum);
+                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d K°\n" RESET_TEXT,sum);
                     break;
             }
             break;
@@ -56,12 +56,12 @@ extern int calculate(int value, int mType, int cType) {
                 case 1:
                     sum = value - 273;
                     leadBoard();
-                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d C°" RESET_TEXT,sum);
+                    printf(GREEN_TEXT "\nResult is::" YELLOW_TEXT"%d C°\n" RESET_TEXT,sum);
                     break;
                 case 2:
                     sum = (value - 273) * 9/5 + 32;
                     leadBoard();
-                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d F°" RESET_TEXT,sum);
+                    printf(GREEN_TEXT "\nResult is:" YELLOW_TEXT"%d F°\n" RESET_TEXT,sum);
                     break;
 
             }
