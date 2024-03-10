@@ -21,28 +21,29 @@ int calculate(int value, int mType, int cType){
     }
     else if (mType == 1 && cType == 2){
         int sum = (value * 9/5) + 32;
-        printf(RED_TEXT "Result is:" YELLOW_TEXT"%d F°" RESET_TEXT,sum);
+        printf(RED_TEXT "\nResult is:" YELLOW_TEXT"%d F°" RESET_TEXT,sum);
     }
     else if(mType == 1 && cType == 3) {
         int sum = value + 273;
-        printf(RED_TEXT "Result is:" YELLOW_TEXT"%d K°" RESET_TEXT,sum);
+        printf(RED_TEXT "\nResult is:" YELLOW_TEXT"%d K°" RESET_TEXT,sum);
     }
     else if(mType == 2 && cType == 1) {
         int sum = (value - 32) * 5/9;
-        printf(RED_TEXT "Result is:" YELLOW_TEXT"%d C°" RESET_TEXT,sum);
+        printf(RED_TEXT "\nResult is:" YELLOW_TEXT"%d C°" RESET_TEXT,sum);
     }
     else if(mType == 2 && cType == 3) {
         int sum = (value - 32) * 5/9 + 273;
-        printf(RED_TEXT "Result is:" YELLOW_TEXT"%d K°" RESET_TEXT,sum);
+        printf(RED_TEXT "\nResult is:" YELLOW_TEXT"%d K°" RESET_TEXT,sum);
     }
     else if(mType == 3 && cType == 1){
         int sum = value - 273;
-        printf(RED_TEXT "Result is:" YELLOW_TEXT"%d C°" RESET_TEXT,sum);
+        printf(RED_TEXT "\nResult is:" YELLOW_TEXT"%d C°" RESET_TEXT,sum);
     }
     else if(mType == 3 && cType == 2) {
         int sum = (value - 273) * 9/5 + 32;
-        printf(RED_TEXT "Result is:" YELLOW_TEXT"%d F°" RESET_TEXT,sum);
+        printf(RED_TEXT "\nResult is:" YELLOW_TEXT"%d F°" RESET_TEXT,sum);
     }
+
 
     return 0;
 }
@@ -53,7 +54,7 @@ int leadBoard() {
     char ch;
 
     ptr = fopen("leadBoard.txt", "r");
-    printf(RED_TEXT "##########################################################################" YELLOW_TEXT);
+    printf(RED_TEXT "##########################################################################\n" YELLOW_TEXT);
     do{
         ch = fgetc(ptr);
         printf("%c", ch);
@@ -86,22 +87,21 @@ int mained() {
         listCon();
         int mainType;
         printf("Select your main type for convert: ");
-        if(scanf("%d", &mainType) == 1 ){
+        if(scanf("%d", &mainType) == 1 && mainType <= 3 ){
             system("clear");
             leadBoard();
             listCon();
             printf("Now, selecty the type for convert: ");
             int convertType;
-            if(scanf("%d", &convertType) == 1) {
+            if(scanf("%d", &convertType) == 1 && convertType <= 3 ) {
                 system("clear");
                 leadBoard();
                 int valueToConvert;
                 printf("Enter the value to convert: ");
-                if(scanf("%d", &valueToConvert) == 1) {
+                if(scanf("%d", &valueToConvert) == 1 ) {
                     printf("Converting...\n");
                     system("clear");
                     leadBoard();
-                    printf("\n\n\n");
                     calculate(valueToConvert, mainType, convertType);
                     break;
                 } else {
