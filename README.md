@@ -1,7 +1,7 @@
-#Temperature Conversos - v1.0
+# Temperature Conversos - v1.0
 Convert any temperature value!
 
-##How to use?
+## How to use?
 -1 - First, clone the repo, using: `git clone https://github.com/fleipekkj13/TemperatureInTerminal.git`
 -2 - Go to the file path: `cd TemperatureInTerminal`
 -3 - Install the app into your system: `sudo bash ./compile.bash`.
