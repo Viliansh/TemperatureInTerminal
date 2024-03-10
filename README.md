@@ -1,4 +1,6 @@
-# Temperature Conversos - v1.0
+# 👋 Hello there! I'm Felipe!
+
+ ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=myusername&hide=javascript,css,scss,html&theme=tokyonight)
 Convert any temperature value!
 
 ## How to use?
